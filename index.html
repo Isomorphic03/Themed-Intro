@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Countdown</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links">
+                <ul>
+
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#countdown">Countdown</a></li>
+                    <li><a href="#Portfolio">Know the Creator</a></li>
+                    <li><a href="#About">Note from the Creator</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <video id="bg-video" autoplay muted loop>
+            <source src="vid/header vid.mp4" type="video/mp4">
+        </video>
+
+        <div class="title-text"><span>VALORANT</span></div>
+
+        <div class="header-shader-top">
+        </div>
+        <div class="header-shader-bottom">
+        </div>
+
+    </section>
+    <div class="overlay"></div>
+    <div class="CD-shader-top"></div>
+
+    <section id="countdown">
+        <div class="countdown-container">
+            <p class="countdown-title">Countdown</p>
+            <p>
+            <h1>Episode 7 Act 4 will begin in</h1>
+            </p>
+            <div class="timer">
+                <div>
+                    <p id="days">00</p>
+                    <span>Days</span>
+                </div>
+                <div>
+                    <p id="hours">00</p>
+                    <span>Hours</span>
+                </div>
+                <div>
+                    <p id="minutes">00</p>
+                    <span>Minutes</span>
+                </div>
+                <div>
+                    <p id="seconds">00</p>
+                    <span>Seconds</span>
+                </div>
+            </div>
+
+
+            <a href="https://playvalorant.com/en-gb/" target="_blank" style="text-decoration: none;">
+                <button class="button">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">Learn More</span>
+                    </span>
+            </a>
+            </button>
+
+        </div>
+    </section>
+    <div class="CD-shader-bottom"></div>
+    <div class="Port-shader-top"></div>
+    <section id="Portfolio">
+        <div class="KnowtheCreator">
+            <p class="port-title">KNOW THE <span class="red">CREATOR</span></p>
+            <div class="port-text">
+                <p>Hi! I'm Vishal Kumar. <br>I'm a 2nd year UG student at IIT Bombay <br> currently pursuing BS Chemistry <br> <span class="red">To view 
+                    my other projects, check out my
+                        github!.My interests are Mathematics,Philosophy, Psychonalysis,<br>Chess, Literature, Debates and Solving Puzzles</span></p>
+                
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="text-decoration: none;">
+                            <button class="button">
+                                <span class="button_lg">
+                                    <span class="button_sl"></span>
+                                    <span class="button_text">Github</span>
+                                </span>
+                        </a>
+            </div>
+
+        </div>
+    </section>
+    <div class="Port-shader-bottom"></div>
+
+    <div class="About-shader-top"></div>
+    <section id="About">
+        <div class="about-container">
+            <p class="About-title">
+                Note from the Creator
+            </p>
+            <p class="about-text">This is the great lesson the depressive learns: Nothing in the world is inherently compelling. Whatever may be really “out there” 
+                cannot project itself as an affective experience. It is all a vacuous affair with only a chemical prestige. Nothing is either good or bad, desirable
+                 or undesirable, or anything else except that it is made so by laboratories inside us producing the emotions on which we live. And to live on
+                  our emotions is to live arbitrarily, inaccurately—imparting meaning to what has none of its own. Yet what other way is there to live? Without the
+                   ever-clanking machinery of emotion, everything would come to a standstill. There would be nothing to do, nowhere to go, nothing to be, and not
+                   one to know. The alternatives are clear: to live falsely as pawns of affect, or to live factually as depressives, or as individuals who know wha
+                    is known to the depressive. How advantageous that we are not coerced into choosing one or the other, neither choice being excellent. One look
+                    at human existence is proof enough that our species will not be released from the stranglehold of emotionalism that anchors it to hallucinations.
+                    That may be no way to live, but to opt for depression would be to opt out of existence as we consciously know it</p>
+        </div>
+
+    </section>
+
+    <div class="about-bottom-shader">
+        
+    </div>
+
+    <section id="footer">
+        <footer>
+            <p>Follow me on</p>
+            <div class="social">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="images/logo/facebook.png"
+                        height="32" width="32"></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="images/logo/instagram.png"
+                        height="32" width="32"></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img
+                        src="images/logo/linkedin.png" height="32" width="32"></a>
+            </div>
+
+
+            <div class="bottom">
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Copyright</a></li>
+                        <li><a href="#">Back to Top</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+    <script>
+        var countdownDate = new Date("Dec 31, 2023 00:00:00").getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countdownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+        }, 1000);
+    </script>
+</body>
+
+</html>
